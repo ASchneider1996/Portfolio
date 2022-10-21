@@ -1,0 +1,604 @@
+/*Mobile*/
+@media (min-width: 320px) and (max-width: 767px) {
+    html, body { 
+        position: absolute; 
+        margin:0;
+        padding:0;
+        width:100%;
+        height:100%;
+        overflow-x: hidden;
+    }
+    /* VARIABLES */
+:root{
+    --white-color: #F5F5F5;
+    --link-color: #000;
+    --heading-color: rgb(24, 23, 23);  
+    --background-color: #BA000C; 
+    --background-div-color: #a0ba00;
+    --projects-color:  #0056BA;
+    --boxes-color: #DBDBDB; 
+    --buttons-blue-color: #0056BA;
+ }
+    section {
+        width: 100%;
+        height: 100%; 
+    }
+    h3 {
+        font-size: 1rem; 
+        font-weight: bolder;
+     }
+    /* Header */
+    header {
+        position: relative; 
+    }
+    header ul {
+        width: 100%; 
+    }
+    #nav-li {
+        display: none; 
+    } 
+    header img {
+        padding-left: 1rem; 
+    }
+    #name-p {
+        width: 55%; 
+        font-size: 1rem; 
+        padding: 0; 
+    }
+    #contact-me-p {
+        width: 100%; 
+        display: flex; 
+        margin-left: 0;
+        justify-content: center;
+        font-size: 0.6rem;
+        font-weight: normal;
+    }
+    #profile-pic {
+        position: absolute; 
+        top: 2rem; 
+        left: 1rem; 
+        width: 8rem; 
+        height: 10rem; 
+    }
+    /* HOME DIV */
+    .home-div {
+        justify-content: left;
+        text-align: left;
+        align-items: left; 
+        width: 100%; 
+        height: 100%; 
+        margin: 0; 
+        padding: 0; 
+    }
+    .home-div h1 {
+        position: absolute; 
+        padding: 0; 
+        width: 100%; 
+        top: 12.5rem; 
+        font-size: 1.5rem; 
+    }
+    .home-div p {
+        position: absolute; 
+        padding: 0; 
+        top: 18rem; 
+        width: 100%; 
+        font-size: 1rem; 
+    }
+    .home-div ul {
+        position: absolute; 
+        padding: 0.5rem 0; 
+        top: 30rem; 
+    }
+    .home-div ul li a { 
+        font-size: 1rem; 
+    }
+    /* ABOUT ME */
+    #about-me { 
+        position: absolute; 
+        top: 36rem; 
+        padding: 2.5% 0 0 0; 
+        width: 100%; 
+        height: 100%; 
+        background-color: var(--background-div-color-color);
+    }
+    #about-me h3 {  
+ padding: 0; 
+    }
+    #about-me p { 
+        padding:0; 
+        width: 100%;
+        font-size: 1rem;
+    }
+    /* SKILLS SPAN */
+    .skills-span {
+        position: absolute; 
+        top: 56rem; 
+        background-color: var(--font-color);
+    }
+    .skills-span ul, .hobbies-span ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0; 
+    }    
+    .skills-span ul li, .hobbies-span ul li {  
+        display: block;
+        width: 40%; 
+        height: 8rem; 
+        margin: 1rem 0;
+        background-color: var(--boxes-color);
+    }
+    .skills-img, .hobbies-img{
+        position: absolute;
+        top: 5rem;
+        z-index: 1;
+    }
+    .skills-span p, .hobbies-span p {
+        position: absolute;
+        top: 4.5rem;
+        font-size: 0.8rem;
+    }
+    /* HOBBIES SPAN */
+    .hobbies-span {
+        position: absolute; 
+        top: 92.5rem;
+        background-color: var(--font-color);
+    }
+    /* ACADEMIC SPAN */
+    .academic-div {
+        position: absolute; 
+        top: 126rem; 
+    }
+    .academic-div span { 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #academic-img-div {
+        margin-bottom: 1rem; 
+    }
+    #academic-img-div h4, #academic-img-div p {
+        width: 16rem; 
+        justify-content: left;
+        text-align: left;
+        font-size: 1rem;
+    }
+    .academic-img {
+        border: 0.1rem solid var(--link-color);
+        padding: 0.2rem; 
+    }
+    #academic-img-div p { 
+        padding: 0; 
+    }
+    /* EXPERIENCE DIV */
+    .experience-div {
+        position: absolute; 
+        top: 190rem;
+    }
+    .project1-span, .project2-span { 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 20rem; 
+    }
+    .project-img, .project-img2 {
+        width: 80%;
+        height: auto; 
+        margin: 0; 
+    }
+    .project1-span ul, .project2-span ul {  
+        margin: 0 auto; 
+        width: 80%; 
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 12rem; 
+    }
+    .project1-span li, .project2-span li{ 
+        width: 100%;
+        justify-content: center;
+        height: 10rem; 
+        margin: 0;
+    }
+    .project1-span h4, .project2-span h4 { 
+        font-size: 1.2rem; 
+        font-weight: bolder;
+    }
+    .project1-span p, .project2-span p { 
+        font-size: 1rem; 
+    }
+    .btn-span {
+        width: 100%; 
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .btn-1, .btn-2 { 
+        width: 35%; 
+    }
+    .btn-1 {
+        border: 0.1rem solid var(--background-color);
+    }
+    /* CONTACT ME DIV*/
+    .contact-me-div {
+        position: absolute; 
+        top: 240rem;
+        padding: 0; 
+        height: 38rem;  
+        background-color: var(--background-div-color);
+    }
+    .contact-me-div img { 
+        display: none;
+    }
+    .contact-me-div form { 
+        margin: 0; 
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .contact-me-div p {
+        width: 100%; 
+        text-align: left;
+    }
+    form #user-name, #user-mail, #mail-subject, #mail-msg { 
+        width: 80%;
+        margin: 1rem 0; 
+    }
+    /* FOOTER */
+    footer {
+        position: absolute; 
+        top: 280rem;
+        padding: 2rem 0; 
+        background-color: #fff;
+    }
+    footer p {  
+        padding: 0; 
+        font-weight: normal;
+    } 
+}
+/* HOME DIV */
+@media (min-width: 700px) and (max-width: 767px) { 
+    .home-div h1 {
+        top: 14rem; 
+    }
+    .home-div ul {
+        top: 25rem; 
+    }
+}
+/* EXPERIENCE */
+@media (min-width: 371px) and (max-width: 568px) {
+    .project1-span, .project2-span { 
+        height: 28rem;
+    }
+    .contact-me-div {
+        position: absolute; 
+        top: 255rem; 
+    }
+    footer {
+        position: absolute; 
+        top: 295rem; 
+    }
+}
+@media (min-width: 569px) and (max-width: 767px) {
+    .project1-span, .project2-span { 
+        height: 35rem;
+    }
+    .contact-me-div {
+        position: absolute; 
+        top: 265rem; 
+    }
+    footer {
+        position: absolute; 
+        top: 300rem; 
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* HEADER */
+    #name-p {
+        padding: 0; 
+    }
+    /* HOME DIV */
+    #nav-li {
+        display: none; 
+    } 
+    .home-div {
+        padding: 0; 
+    }
+    .home-div h1 {
+        width: 70%; 
+        top: 12rem; 
+        font-size:2rem; 
+    }
+    .home-div p {
+        position: relative;
+        width: 70%; 
+        font-size: 1.2rem; 
+    }
+    #profile-pic {
+        position: absolute; 
+        top: 8rem; 
+        left: 75%; 
+        width: 10rem; 
+        height: 12rem; 
+    }
+    /* ABOUT ME */
+    #about-me {
+        padding: 2rem 0; 
+        justify-content: right;
+    }
+    #about-me p { 
+        font-size: 1.2rem;
+    }
+    /* SKILLS SPAN, HOBBIES SPAN */
+    .skills-span ul, .hobbies-span ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0; 
+        width: 100%; 
+    }    
+    .skills-span ul li, .hobbies-span ul li {  
+        display: block;
+        width: 40%; 
+        height: 8rem; 
+        margin: 1rem 0;
+    }
+    .skills-img, .hobbies-img{
+        position: absolute;
+        top: 4rem;
+        width: 2rem; 
+        height: auto; 
+        z-index: 1;
+    }
+    .skills-span p, .hobbies-span p {
+        position: absolute;
+        top:4.5rem;
+        font-size: 0.8rem;
+    }
+    /* ACADEMIC SPAN */
+    .academic-div span { 
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #academic-img-div {
+        margin-bottom: 1rem; 
+        display: inline-block;
+        width: 40%;
+    }
+    .academic-div h4 { 
+        font-size: 1.2rem;
+    }
+    .academic-div p { 
+        padding: 0; 
+        font-size: 1rem;
+    }
+    .academic-div h4, .academic-div p { 
+        padding-left: 2rem; 
+        text-align: left;
+    }  
+    /* EXPERIENCE DIV */
+    .experience-div {
+        margin-top: 5rem; 
+    }
+    .project1-span, .project2-span { 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 35rem; 
+        margin-bottom: 2rem; 
+    }
+    .project-img, .project-img2 {
+        width: 80%;
+        height: auto; 
+        margin: 0; 
+    }
+    .project1-span ul, .project2-span ul {  
+        width: 40rem;
+    }
+    .project1-span li, .project2-span li { 
+        width: 100%;
+        justify-content: center;
+        height: 10rem; 
+        margin: 0;
+    }
+    /* CONTACT ME DIV*/
+    .contact-me-div img { 
+        display: none;
+    }
+    .contact-me-div {
+        padding: 0; 
+    }
+    .contact-me-div form { 
+        width: 90%; 
+        margin: 0 auto; 
+    }
+} 
+@media (min-width: 800px) and (max-width: 1024px) { 
+    #academic-img-div h4, #academic-img-div p {
+    width: 16rem;
+    margin: 0 auto; 
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+}
+@media (min-width: 870px) and (max-width: 1024px) { 
+   .project1-span, .project2-span {
+    height: 40rem; 
+   }
+   .project1-span ul, .project2-span ul { 
+    width: 80%; 
+   }
+}
+
+/*Desktop*/
+@media (min-width: 1025px) { 
+
+     /* VARIABLES */
+:root{
+    --white-color: #F5F5F5;
+    --link-color: #000;
+    --heading-color: rgb(24, 23, 23);  
+    --header-color:  #dd80a1;  
+    /* --background-color: #F7A719;  */
+    --background-color: #F7A000; 
+    --background-div-color: #d0dd80;
+    --projects-color:  #0056BA;
+    --boxes-color: #DBDBDB; 
+    --buttons-blue-color: #0056BA;
+ }
+    h3 {
+        font-size: 2rem;
+        font-weight: 600; 
+    }
+    /* HEADER */
+    header {
+        background-color: var(--header-color);
+    }
+    header ul li a:hover{ 
+       border-bottom: 0.1rem solid var(--link-color); 
+    }
+    #name-p {
+       padding: 0; 
+    }
+    /* HOME DIV */
+    .home-div {
+       padding: 0; 
+    }
+    .home-div p {
+        width: 70%; 
+     }
+    #profile-pic {
+        top: 5rem;
+        left: 75%;   
+        width: 15rem;
+        height: 17.5rem;
+    }
+    /* ABOUT ME */
+    #about-me { 
+        margin: 4rem 0; 
+        padding: 4rem 0;
+        background-color: var(--background-div-color);
+    }
+    /* SKILLS SPAN, HOBBIES SPAN */
+    .skills-span ul, .hobbies-span ul {
+        margin: 0 auto; 
+    }
+    .skills-span ul li, .hobbies-span ul li {
+        width: 18%;                                                                                                                                                                                                                                                                                                                                                                                                      
+        height: 12rem;
+    }
+    /* ACADEMIC SPAN */
+    .academic-div {
+        background-color: var(--background-div-color);
+        margin: 4rem 0; 
+    }
+    .academic-div span { 
+        justify-content: space-around;
+        align-items: center;
+    }
+    #academic-img-div { 
+        width: 20%;
+        justify-content: flex-start;
+        background-color: var(--background-div-color);
+    }
+    .academic-img {
+        width: 100%;
+        height: 8rem; 
+        border: 0.1rem solid var(--link-color); 
+    } 
+    .academic-div h4 {
+        font-size: 1.5rem;
+    }
+    .academic-div p { 
+       padding: 0; 
+    }
+    /* EXPERIENCE DIV */
+    .project1-span, .project2-span { 
+        height: 100%; 
+    }
+    .project-img, .project-img2 {
+        margin: 0 0 5rem 5rem;
+        width: 70%;
+        height: auto; 
+     }
+     .project1-span ul, .project2-span ul {
+        padding: 0; 
+        margin: 0;
+width: 20rem; 
+    }
+    .project1-span ul li, .project2-span ul li{
+        margin: 0; 
+        width: 100%; 
+        height: 40rem; 
+        justify-content: center;
+        text-align: center;
+}
+.project1-span ul li h4, .project2-span ul li h4{ 
+      width: 100%; 
+      padding-left: 10%; 
+}
+.project1-span ul li p, .project2-span ul li p{  
+    width: 100%; 
+    padding-left: 10%; 
+}
+    /* CONTACT ME DIV */
+    .contact-me-div {
+        margin: 0; 
+        padding: 5rem 0; 
+        justify-content: center;
+        align-items: center;
+    }
+    form #user-name, #user-mail, #mail-subject, #mail-msg { 
+        width: 80%;
+    }
+    .contact-me-div img {
+        padding-left: 2rem; 
+    }
+    .contact-me-div p {
+        width: 80%; 
+    }
+}
+/* EXPERIENCE DIV */
+@media (min-width: 1025px) and (max-width: 1170px) { 
+    .project-img, .project-img2 {
+width: 70%; 
+margin: 0 0 5rem 2%; 
+    }
+    .project1-span ul, .project2-span ul {
+        padding: 0; 
+        margin: 0;
+width: 20rem; 
+    }
+    .project1-span ul li, .project2-span ul li {
+        margin: 0; 
+        width: 100%; 
+        justify-content: center;
+        text-align: center;
+}
+}
+/* ACADEMIC DIV */
+@media (min-width: 1950px) { 
+    #academic-img-div { 
+       height: 100%; 
+    }
+    .academic-img {
+      height: 12rem; 
+    } 
+    .academic-div h4 {
+font-size: 2rem; 
+    }
+    .academic-div p { 
+font-size: 1.5rem;
+    }
+}
+/* Breaking Points
+320px — 767px: Mobile devices.
+768px — 1024px: Tablets.
+-1025px: Desktops, large screens.
+*/
